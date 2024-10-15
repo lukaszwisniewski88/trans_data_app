@@ -6,11 +6,9 @@ use rocket::{
     outcome::Outcome,
     request::{self, FromRequest, Request},
     serde::Serialize,
-    State,
 };
 use uuid::Uuid;
 
-use crate::Postgres;
 #[derive(Serialize, Queryable, Debug)]
 #[serde(crate = "rocket::serde")]
 pub struct Session {
