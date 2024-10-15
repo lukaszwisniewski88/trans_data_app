@@ -1,0 +1,10 @@
+[package]
+name = "domain"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+diesel = { version = "2.1.6", features = ["postgres", "uuid"] }
+rocket = { version = "0.5.1", features = ["json"] }
+uuid = { version = "1.10.0", features = ["v4", "serde"] }
+validator = { version = "0.18.1", features = ["derive"] }

@@ -1,6 +1,2 @@
 [workspace]
-
-members = [
-    "common",
-    "back_end",
-]
+members = ["api", "domain", "infrastructure", "application", "shared"]

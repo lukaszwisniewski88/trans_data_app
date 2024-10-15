@@ -1,0 +1,16 @@
+[package]
+name = "api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+application = { version = "0.1.0", path = "../application" }
+diesel = { version = "2.1.6", features = ["postgres"] }
+domain = { version = "0.1.0", path = "../domain" }
+infrastructure = { version = "0.1.0", path = "../infrastructure" }
+rocket = { version = "0.5.1", features = ["json"] }
+rocket_sync_db_pools = { version = "0.1.0", features = ["diesel", "diesel_postgres_pool", "r2d2_postgres"] }
+serde_json = "1.0.128"
+shared = { version = "0.1.0", path = "../shared" }
+uuid = { version = "1.10.0", features = ["v4", "serde"] }
+validator = { version = "0.18.1", features = ["derive"] }
